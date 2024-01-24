@@ -1,19 +1,50 @@
 import React, { useState } from "react";
 import logo from "../images/logo.webp";
 import phone from "../images/phone.webp";
+import girl from "../images/girl.webp";
 
 function Header() {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  {
+    open
+      ? document.body.classList.add("overflow-hidden")
+      : document.body.classList.remove("overflow-hidden");
+  }
+  const [currentTab, setCurrentTab] = useState("0");
+  const tabs = [
     {
-      open
-        ? document.body.classList.add("overflow-hidden")
-        : document.body.classList.remove("overflow-hidden");
-    } 
+      id: 0,
+      heading: "Hosting",
+      title: "Premium Web Hosting for Your Website",
+      para: "Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support.",
+    },
+    {
+      id: 1,
+      heading: "Domain",
+      title: "Premium Domain for Your Website",
+      para: "Domain for individuals and businesses of all sizes backed by 24x7x365 Support.",
+    },
+    {
+      id: 2,
+      heading: "SEO",
+      title: "SEO for Your Website",
+      para: "SEO for individuals and businesses of all sizes backed by 24x7x365 Support.",
+    },
+    {
+      id: 3,
+      heading: "Email",
+      title: "Premium Email for Your Website",
+      para: "Email for individuals and businesses of all sizes backed by 24x7x365 Support.",
+    },
+  ];
+  function handleTabClick(e) {
+    setCurrentTab(e.target.id);
+  }
   return (
     <>
-      <div className="max-w-[1240px] mx-auto px-3 w-full flex flex-col min-h-[781px] min-[1440px]:min-h-screen">
+      <div className="max-w-[1240px] mx-auto px-3 w-full flex flex-col items-center min-h-[781px] min-[1440px]:min-h-screen mb-12 lg:mb-0">
         {/* navbar */}
-        <nav className="h-[101px] min-[1200px]:pr-[78px] flex items-end">
+        <nav className="h-[101px] min-[1200px]:pr-[78px] flex items-center lg:items-end w-full">
           <div className="h-[60px] flex justify-between w-full">
             <div className="flex">
               <ul className="flex items-center">
@@ -114,7 +145,11 @@ function Header() {
           </div>
         </nav>
         {/* page */}
-        <ul className={`w-full h-full fixed flex min-[850px]:hidden justify-center items-center flex-col gap-10 bg-white z-[5] left-[-100%] duration-300 ${open == false ? "":"left-[0%]"}`}>
+        <ul
+          className={`w-full h-full fixed flex min-[850px]:hidden justify-center items-center flex-col gap-10 bg-white z-[7] left-[-100%] duration-300 ${
+            open == false ? "" : "left-[0%]"
+          }`}
+        >
           <li>
             <a
               className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal min-[992px]:ml-[65px] relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
@@ -169,6 +204,65 @@ function Header() {
             </ul>
           </li>
         </ul>
+        {/* hero section*/}
+        <div className="flex grow items-center">
+          <div className="flex min-h-[521px] lg:flex-row flex-col-reverse gap-y-6 lg:gap-0">
+            <div className="w-full lg:w-1/2">
+              <div className="relative after:absolute after:w-[242px] after:h-[1px] after:bg-[#E5E5E5] after:bottom-[-3px] after:lg:left-[2px] mb-6 sm:mb-[30px] flex lg:justify-start justify-center">
+                {tabs.map((tabs) => (
+                  <button
+                    key={tabs.id}
+                    id={tabs.id}
+                    onClick={handleTabClick}
+                    className={`font-poppins text-[15px] not-italic font-semibold leading-normal duration-300 relative ${
+                      tabs.id == 1 ? "ml-[23px] mr-[18px]" : ""
+                    } ${tabs.id == 3 ? "ml-[15px]" : ""} ${
+                      currentTab === `${tabs.id}`
+                        ? "text-[#B00000] after:absolute after:w-[80%] after:bg-[#B00000] after:left-[8%] after:bottom-[-3px] after:z-[5] after:h-[1px]"
+                        : "text-[rgba(214,212,212,0.88)]"
+                    }`}
+                  >
+                    {tabs.heading}
+                  </button>
+                ))}
+              </div>
+              <div>
+                {tabs.map((tabs) => (
+                  <div
+                    className="flex flex-col lg:items-start items-center"
+                    key={tabs.id}
+                  >
+                    {currentTab === `${tabs.id}` && (
+                      <>
+                        <h1 className="text-[#2E2E2E] w-full font-poppins text-[35px] sm:text-[64px] not-italic font-bold sm:leading-[77.5px] mb-6 sm:mb-[34px] lg:text-start text-center">
+                          {tabs.title}
+                        </h1>
+                        <p className="max-w-[448px] text-[#808080] font-inter text-base not-italic font-normal leading-[28px] tracking-[0.8px] mb-6 sm:mb-[60px] lg:text-start text-center">
+                          {tabs.para}
+                        </p>
+                        <div className="flex gap-6 flex-wrap justify-center">
+                          <button className="border border-solid border-black rounded-[8px] w-[160px] h-[48px] justify-center items-center flex text-black font-poppins text-[14px] not-italic font-normal leading-[24px] hover:text-white duration-300 bg-white hover:bg-[#B00000] hover:border-transparent hover:shadow-[0px_0px_64px_0px_rgba(176,0,0,0.30)]">
+                            Create an Account
+                          </button>
+                          <button className="border border-solid border-black rounded-[8px] w-[160px] h-[48px] justify-center items-center flex text-black font-poppins text-[14px] not-italic font-normal leading-[24px] hover:text-white duration-300 bg-white hover:bg-[#B00000] hover:border-transparent hover:shadow-[0px_0px_64px_0px_rgba(176,0,0,0.30)]">
+                            Choose your plan
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-end">
+              <img
+                className="max-w-[552px] min-[1200px]:h-[504px] w-full"
+                src={girl}
+                alt="girl typing"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
