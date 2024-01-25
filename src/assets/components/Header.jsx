@@ -49,11 +49,13 @@ function Header() {
             <div className="flex">
               <ul className="flex items-center">
                 <li>
-                  <img
-                    className="w-[75px] h-[50px] min-[450px]:w-[91px] min-[450px]:h-[60px] z-10 relative"
-                    src={logo}
-                    alt="logo"
-                  />
+                  <a href="">
+                    <img
+                      className="w-[75px] h-[50px] min-[450px]:w-[91px] min-[450px]:h-[60px] z-10 relative"
+                      src={logo}
+                      alt="logo"
+                    />
+                  </a>
                 </li>
                 <li className="hidden min-[850px]:block">
                   <a
