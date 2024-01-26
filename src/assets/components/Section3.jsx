@@ -14,9 +14,17 @@ import crypto2 from "../images/crypto2.webp";
 function Section3() {
   return (
     <>
-      <div id="section3" className="max-w-[1256px] w-full mx-auto pl-3 min-[1200px]:pl-[50px] pr-3 mb-12 lg:mb-[106px]">
+      <div
+        id="section3"
+        className="max-w-[1256px] w-full mx-auto pl-3 min-[1200px]:pl-[50px] pr-3 mb-12 lg:mb-[106px] overflow-hidden"
+      >
         <div className="w-full flex flex-wrap">
-          <div className="w-full min-[1100px]:w-1/2 flex justify-center min-[1100px]:justify-end">
+          <div
+            className="w-full min-[1100px]:w-1/2 flex justify-center min-[1100px]:justify-end"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="max-w-[445px] pt-[56px] flex flex-col items-end">
               <div>
                 <h2 className="text-[#18191F] font-inter text-[35px] sm:text-[48px] not-italic font-extrabold sm:leading-[64px] mb-2 z-[1] relative">
@@ -63,7 +71,12 @@ function Section3() {
               </div>
             </div>
           </div>
-          <div className="w-full min-[1100px]:w-1/2 sm:pl-[30px] pt-6 sm:pt-12 min-[1100px]:pt-[104px] flex flex-col items-center min-[1100px]:items-start">
+          <div
+            className="w-full min-[1100px]:w-1/2 sm:pl-[30px] pt-6 sm:pt-12 min-[1100px]:pt-[104px] flex flex-col items-center min-[1100px]:items-start"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="max-w-[445px] w-full min-h-[340px] rounded-[8px] bg-white shadow-[0px_10px_20px_0px_rgba(41,41,42,0.07)] px-6 sm:px-[32px] pt-[39px] pb-[14px]">
               <img
                 className="w-[79px] h-[50px] ml-[32px] mb-[15px]"
@@ -120,7 +133,12 @@ function Section3() {
           </div>
         </div>
         <div className="w-full flex flex-wrap mt-6 lg:mt-[84px]">
-          <div className="w-full lg:w-1/2 flex justify-center text-center lg:text-start lg:justify-start">
+          <div
+            className="w-full lg:w-1/2 flex justify-center text-center lg:text-start lg:justify-start"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="max-w-[445px] w-full pt-[21px]">
               <h2 className="text-[#18191F] font-inter text-[35px] sm:text-[48px] not-italic font-extrabold sm:leading-[64px] mb-2">
                 We serve over 100 Nigerian Websites
@@ -131,7 +149,12 @@ function Section3() {
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div
+            className="w-full lg:w-1/2 flex justify-center lg:justify-end"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="max-w-[490px] w-full flex flex-wrap gap-x-6 sm:gap-x-[65px] justify-center">
               <div className="w-[120px] h-[120px] overflow-hidden">
                 <a href="https://jerrypiping.com/" target="_blank">
@@ -182,12 +205,13 @@ function Section3() {
                 </a>
               </div>
               <div className="w-[120px] h-[120px] overflow-hidden">
-                <a href="https://crypto.com/" target="_blank"></a>
-                <img
-                  className="duration-300 hover:scale-90"
-                  src={crypto2}
-                  alt="crypto"
-                />
+                <a href="https://crypto.com/" target="_blank">
+                  <img
+                    className="duration-300 hover:scale-90"
+                    src={crypto2}
+                    alt="crypto"
+                  />
+                </a>
               </div>
             </div>
           </div>

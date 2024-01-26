@@ -215,9 +215,15 @@ function Header() {
           </li>
         </ul>
         {/* hero section*/}
-        <div className="flex grow items-center">
+        <div className="flex grow items-center overflow-hidden">
           <div className="flex min-h-[521px] lg:flex-row flex-col-reverse gap-y-6 lg:gap-0">
-            <div className="w-full lg:w-1/2">
+            <div
+              className="w-full lg:w-1/2"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-delay="2000"
+              data-aos-duration="1000"
+            >
               <div className="relative after:absolute after:w-[242px] after:h-[1px] after:bg-[#E5E5E5] after:bottom-[-3px] after:lg:left-[2px] mb-6 sm:mb-[30px] flex lg:justify-start justify-center">
                 {tabs.map((tabs) => (
                   <button
@@ -264,7 +270,13 @@ function Header() {
                 ))}
               </div>
             </div>
-            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-end">
+            <div
+              className="w-full lg:w-1/2 flex justify-center lg:justify-end items-end"
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-delay="2000"
+              data-aos-duration="1000"
+            >
               <img
                 className="max-w-[552px] min-[1200px]:h-[504px] w-full"
                 src={girl}

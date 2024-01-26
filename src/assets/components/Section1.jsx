@@ -67,9 +67,17 @@ function Section1() {
 
   return (
     <>
-      <div id="section1" className="max-w-[1300px] w-full min-w-[1200px]:pl-5 pl-3 pr-3 mx-auto overflow-hidden mb-12">
+      <div
+        id="section1"
+        className="max-w-[1300px] w-full min-w-[1200px]:pl-5 pl-3 pr-3 mx-auto overflow-hidden mb-12"
+      >
         <div className="flex w-full flex-wrap">
-          <div className="w-full xl:w-1/2 flex flex-col items-center xl:items-start">
+          <div
+            className="w-full xl:w-1/2 flex flex-col items-center xl:items-start"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <h2 className="max-w-[594px] text-[#18191F] font-inter text-center xl:text-start text-[30px] sm:text-[48px] not-italic font-extrabold leading-[64px]">
               True Cloud Web Hosting
             </h2>
@@ -81,7 +89,12 @@ function Section1() {
               scalable.
             </p>
           </div>
-          <div className="w-full xl:w-1/2 xl:flex justify-end mt-[22px]">
+          <div
+            className="w-full xl:w-1/2 xl:flex justify-end mt-[22px]"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="hidden xl:flex flex-wrap min-[1300px]:pl-[25px]">
               <div className="xl:mr-[82px] overflow-hidden">
                 <a href="https://cpanel.net/" target="_blank">
@@ -220,7 +233,12 @@ function Section1() {
             </Slider>
           </div>
         </div>
-        <div className="flex justify-around mt-12 lg:mt-[118px] flex-wrap gap-6">
+        <div
+          className="flex justify-around mt-12 lg:mt-[118px] flex-wrap gap-6"
+          data-aos="zoom-out"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
           {section1data.map((data, index) => (
             <div
               key={index}
@@ -229,7 +247,9 @@ function Section1() {
               } flex flex-col items-center`}
             >
               <img
-                className={`${data.id == 1 ? "mb-3" : "mb-[17px]"} w-[100px] h-[100px]`}
+                className={`${
+                  data.id == 1 ? "mb-3" : "mb-[17px]"
+                } w-[100px] h-[100px]`}
                 src={data.image}
                 alt="image"
               />

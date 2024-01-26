@@ -5,7 +5,12 @@ function Section4() {
     <>
       <div className="max-w-[1314px] w-full mx-auto pl-3 pr-3 min-[1200px]:pr-[30px] mb-12 md:mb-[110px]">
         <div className="bg-section4bg bg-cover bg-no-repeat bg-center w-full md:min-h-[432px] flex justify-center">
-          <div className="max-w-[1024px] w-full pt-10 sm:pt-[80px] pb-10 sm:pb-[80px] md:pb-0 flex flex-col items-center rounded-[16px]">
+          <div
+            className="max-w-[1024px] w-full pt-10 sm:pt-[80px] pb-10 sm:pb-[80px] md:pb-0 flex flex-col items-center rounded-[16px]"
+            data-aos="zoom-in"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <h2 className="text-[#2E2E2E] text-center font-poppins sm:text-[48px] md:text-[64px] text-[35px] not-italic font-semibold md:leading-[88px] mb-5 sm:mb-10">
               We're here to make your website awesome.
             </h2>

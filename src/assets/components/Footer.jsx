@@ -4,9 +4,17 @@ import footerlogo from "../images/footerlogo.webp";
 function Footer() {
   return (
     <>
-      <div id="footer" className="bg-[#B00000] min-h-[536px] pt-[64px] pb-6 min-[992px]:pb-0">
+      <div
+        id="footer"
+        className="bg-[#B00000] min-h-[536px] pt-[64px] pb-6 min-[992px]:pb-0"
+      >
         <div className="max-w-[1256px] w-full mx-auto pl-3 pr-3 min-[1200px]:pr-[23px] flex flex-wrap gap-y-6">
-          <div className="w-full min-[992px]:w-[34%]">
+          <div
+            className="w-full min-[992px]:w-[34%]"
+            data-aos="zoom-in"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="max-w-[296px]">
               <a href="#header">
                 <img
@@ -22,7 +30,12 @@ function Footer() {
               </p>
             </div>
           </div>
-          <div className="w-full min-[992px]:w-[66%] flex flex-wrap gap-y-6">
+          <div
+            className="w-full min-[992px]:w-[66%] flex flex-wrap gap-y-6"
+            data-aos="zoom-in"
+            data-aos-once="true"
+            data-aos-duration="1000"
+          >
             <div className="w-[50%] sm:w-[25%] md:mt-4 flex justify-start">
               <ul className="flex flex-col gap-6">
                 <li className="text-white font-inter text-base not-italic font-bold leading-[24px]">
@@ -157,7 +170,12 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p className="w-full max-w-[1256px] mx-auto pl-3 pr-3 min-[1200px]:pr-[23px] flex flex-wrap flex-col min-[410px]:flex-row items-center mt-12 min-[992px]:mt-[96px]">
+        <p
+          className="w-full max-w-[1256px] mx-auto pl-3 pr-3 min-[1200px]:pr-[23px] flex flex-wrap flex-col min-[410px]:flex-row items-center mt-12 min-[992px]:mt-[96px]"
+          data-aos="zoom-in"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
           <span className="text-white font-inter text-base not-italic font-normal leading-[32px]">
             Built by Jeremiah with
           </span>{" "}

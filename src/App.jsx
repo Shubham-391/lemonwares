@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './assets/components/Header'
 import Section1 from './assets/components/Section1'
@@ -8,8 +8,13 @@ import Section4 from './assets/components/Section4'
 import Footer from './assets/components/Footer'
 import Top from './assets/components/Top'
 import Preloader from './assets/components/Preloader'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
