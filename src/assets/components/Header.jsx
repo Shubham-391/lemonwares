@@ -44,7 +44,7 @@ function Header() {
     <>
       <div
         id="header"
-        className="max-w-[1240px] mx-auto px-3 w-full flex flex-col items-center min-h-[781px] min-[1440px]:min-h-screen mb-12 lg:mb-0"
+        className="max-w-[1240px] mx-auto px-3 w-full flex flex-col items-center min-h-[781px] min-[1441px]:min-h-screen mb-12 lg:mb-0"
       >
         {/* navbar */}
         <nav className="h-[101px] min-[1200px]:pr-[78px] flex items-center lg:items-end w-full">
