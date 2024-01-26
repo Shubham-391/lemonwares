@@ -42,14 +42,17 @@ function Header() {
   }
   return (
     <>
-      <div className="max-w-[1240px] mx-auto px-3 w-full flex flex-col items-center min-h-[781px] min-[1440px]:min-h-screen mb-12 lg:mb-0">
+      <div
+        id="header"
+        className="max-w-[1240px] mx-auto px-3 w-full flex flex-col items-center min-h-[781px] min-[1440px]:min-h-screen mb-12 lg:mb-0"
+      >
         {/* navbar */}
         <nav className="h-[101px] min-[1200px]:pr-[78px] flex items-center lg:items-end w-full">
           <div className="h-[60px] flex justify-between w-full">
             <div className="flex">
               <ul className="flex items-center">
                 <li>
-                  <a href="">
+                  <a href="#header" onClick={() => setOpen(false)}>
                     <img
                       className="w-[75px] h-[50px] min-[450px]:w-[91px] min-[450px]:h-[60px] z-10 relative"
                       src={logo}
@@ -60,7 +63,7 @@ function Header() {
                 <li className="hidden min-[850px]:block">
                   <a
                     className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal ml-[33px] min-[992px]:ml-[65px] relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-                    href="#"
+                    href="#section1"
                   >
                     Our Services
                   </a>
@@ -70,7 +73,7 @@ function Header() {
                 <li className="hidden min-[850px]:block">
                   <a
                     className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-                    href=""
+                    href="#section2"
                   >
                     About
                   </a>
@@ -78,7 +81,7 @@ function Header() {
                 <li className="hidden min-[850px]:block">
                   <a
                     className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-                    href=""
+                    href="#section3"
                   >
                     Blog&News
                   </a>
@@ -86,7 +89,7 @@ function Header() {
                 <li className="hidden min-[850px]:block">
                   <a
                     className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-                    href=""
+                    href="#footer"
                   >
                     Contact
                   </a>
@@ -98,7 +101,7 @@ function Header() {
                 <li className="hidden min-[850px]:block">
                   <a
                     className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-                    href=""
+                    href="#footer"
                   >
                     Account
                   </a>
@@ -146,7 +149,7 @@ function Header() {
             </div>
           </div>
         </nav>
-        {/* page */}
+        {/* small screen navpage */}
         <ul
           className={`w-full h-full fixed flex min-[850px]:hidden justify-center items-center flex-col gap-10 bg-white z-[7] left-[-100%] duration-300 ${
             open == false ? "" : "left-[0%]"
@@ -155,7 +158,8 @@ function Header() {
           <li>
             <a
               className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal min-[992px]:ml-[65px] relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-              href="#"
+              href="#section1"
+              onClick={() => setOpen(false)}
             >
               Our Services
             </a>
@@ -163,7 +167,8 @@ function Header() {
           <li>
             <a
               className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-              href=""
+              href="#section2"
+              onClick={() => setOpen(false)}
             >
               About
             </a>
@@ -171,7 +176,8 @@ function Header() {
           <li>
             <a
               className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-              href=""
+              href="#section3"
+              onClick={() => setOpen(false)}
             >
               Blog&News
             </a>
@@ -179,7 +185,8 @@ function Header() {
           <li>
             <a
               className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-              href=""
+              href="#footer"
+              onClick={() => setOpen(false)}
             >
               Contact
             </a>
@@ -187,7 +194,8 @@ function Header() {
           <li>
             <a
               className="text-black font-poppins text-[15px] not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
-              href=""
+              href="#footer"
+              onClick={() => setOpen(false)}
             >
               Account
             </a>

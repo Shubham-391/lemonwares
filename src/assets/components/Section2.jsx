@@ -125,7 +125,7 @@ function Section2() {
   }
   return (
     <>
-      <div className="min-[1200px]:pt-[85px] mb-12 min-[1200px]:mb-[105px]">
+      <div id="section2" className="min-[1200px]:pt-[85px] mb-12 min-[1200px]:mb-[105px]">
         <div className="max-w-[1120px] mx-auto px-3 flex flex-col items-center">
           <h2 className="max-w-[650px] text-black text-center font-poppins text-[35px] sm:text-[50px] not-italic font-semibold sm:leading-[60px] mb-6 sm:mb-[38px]">
             Ready to get started with Lemon Wares?

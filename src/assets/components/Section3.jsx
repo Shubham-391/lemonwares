@@ -14,7 +14,7 @@ import crypto2 from "../images/crypto2.webp";
 function Section3() {
   return (
     <>
-      <div className="max-w-[1256px] w-full mx-auto pl-3 min-[1200px]:pl-[50px] pr-3 mb-12 lg:mb-[106px]">
+      <div id="section3" className="max-w-[1256px] w-full mx-auto pl-3 min-[1200px]:pl-[50px] pr-3 mb-12 lg:mb-[106px]">
         <div className="w-full flex flex-wrap">
           <div className="w-full min-[1100px]:w-1/2 flex justify-center min-[1100px]:justify-end">
             <div className="max-w-[445px] pt-[56px] flex flex-col items-end">

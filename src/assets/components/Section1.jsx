@@ -67,7 +67,7 @@ function Section1() {
 
   return (
     <>
-      <div className="max-w-[1300px] w-full min-w-[1200px]:pl-5 pl-3 pr-3 mx-auto overflow-hidden mb-12">
+      <div id="section1" className="max-w-[1300px] w-full min-w-[1200px]:pl-5 pl-3 pr-3 mx-auto overflow-hidden mb-12">
         <div className="flex w-full flex-wrap">
           <div className="w-full xl:w-1/2 flex flex-col items-center xl:items-start">
             <h2 className="max-w-[594px] text-[#18191F] font-inter text-center xl:text-start text-[30px] sm:text-[48px] not-italic font-extrabold leading-[64px]">
@@ -86,7 +86,7 @@ function Section1() {
               <div className="xl:mr-[82px] overflow-hidden">
                 <a href="https://cpanel.net/" target="_blank">
                   <img
-                    className="duration-300 hover:scale-90"
+                    className="duration-300 hover:scale-90 w-[140px] h-[30]"
                     src={cpanel}
                     alt="cpanel"
                   />
@@ -95,7 +95,7 @@ function Section1() {
               <div className="xl:mr-[107px] overflow-hidden">
                 <a href="https://www.imunify360.com/" target="_blank">
                   <img
-                    className="duration-300 hover:scale-90"
+                    className="duration-300 hover:scale-90 w-[125px] h-[50px]"
                     src={imunity}
                     alt="imunity"
                   />
@@ -104,7 +104,7 @@ function Section1() {
               <div className="overflow-hidden">
                 <a href="https://www.litespeedtech.com/" target="_blank">
                   <img
-                    className="duration-300 hover:scale-90"
+                    className="duration-300 hover:scale-90 w-[125px] h-[53px]"
                     src={litespeed}
                     alt="litespeed"
                   />
@@ -113,7 +113,7 @@ function Section1() {
               <div className="xl:mr-[53px] overflow-hidden">
                 <a href="https://softaculous.com/" target="_blank">
                   <img
-                    className="duration-300 hover:scale-90"
+                    className="duration-300 hover:scale-90 w-[172px] h-[92px]"
                     src={softaculous}
                     alt="softaculous"
                   />
@@ -125,7 +125,7 @@ function Section1() {
                   target="_blank"
                 >
                   <img
-                    className="duration-300 hover:scale-90"
+                    className="duration-300 hover:scale-90 w-[168px] h-[56px]"
                     src={wordpress}
                     alt="wordpress"
                   />
@@ -139,7 +139,7 @@ function Section1() {
                   <img
                     className="
                   duration-300
-                  hover:scale-90"
+                  hover:scale-90 w-[143px] h-[47px]"
                     src={cloudfare}
                     alt="cloudfare"
                   />
@@ -229,7 +229,7 @@ function Section1() {
               } flex flex-col items-center`}
             >
               <img
-                className={`${data.id == 1 ? "mb-3" : "mb-[17px]"}`}
+                className={`${data.id == 1 ? "mb-3" : "mb-[17px]"} w-[100px] h-[100px]`}
                 src={data.image}
                 alt="image"
               />
