@@ -108,21 +108,19 @@ function Header() {
                 </li>
                 <li className="w-[1px] h-[19px] bg-[#DAD8D8] hidden min-[850px]:block"></li>
                 <li>
-                  <ul className="gap-[6px] items-center hidden min-[850px]:flex">
-                    <img
-                      className="w-[20px] h-[20px]"
-                      src={phone}
-                      alt="phone"
-                    />
-                    <li>
-                      <a
-                        className="text-black font-poppins text-base not-italic font-semibold leading-normal"
-                        href="tel:+2349067322844"
-                      >
-                        +2349067322844
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    className="text-black font-poppins text-base not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
+                    href="tel:+2349067322844"
+                  >
+                    <ul className="gap-[6px] items-center hidden min-[850px]:flex">
+                      <img
+                        className="w-[20px] h-[20px]"
+                        src={phone}
+                        alt="phone"
+                      />
+                      <li>+2349067322844</li>
+                    </ul>
+                  </a>
                 </li>
               </ul>
               {/* open/close navbar button */}
@@ -201,25 +199,23 @@ function Header() {
             </a>
           </li>
           <li>
-            <ul className="gap-[6px] items-center flex">
-              <img className="w-[20px] h-[20px]" src={phone} alt="phone" />
-              <li>
-                <a
-                  className="text-black font-poppins text-base not-italic font-semibold leading-normal"
-                  href="tel:+2349067322844"
-                >
-                  +2349067322844
-                </a>
-              </li>
-            </ul>
+            <a
+              className="text-black font-poppins text-base not-italic font-semibold leading-normal relative after:absolute after:h-[2px] duration-300 after:w-[0%] hover:after:w-[75%] after:bg-[#B00000] after:left-[50%] after:duration-300 hover:after:left-[13%] after:bottom-[-4px] after:rounded-[10px]"
+              href="tel:+2349067322844"
+            >
+              <ul className="gap-[6px] items-center flex">
+                <img className="w-[20px] h-[20px]" src={phone} alt="phone" />
+                <li>+2349067322844</li>
+              </ul>
+            </a>
           </li>
         </ul>
         {/* hero section*/}
-        <div className="flex grow items-center overflow-hidden">
+        <div className="flex grow items-center">
           <div className="flex min-h-[521px] lg:flex-row flex-col-reverse gap-y-6 lg:gap-0">
             <div
               className="w-full lg:w-1/2"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-once="true"
               data-aos-delay="2000"
               data-aos-duration="1000"
@@ -257,7 +253,7 @@ function Header() {
                           {tabs.para}
                         </p>
                         <div className="flex gap-6 flex-wrap justify-center">
-                          <button className="border border-solid border-black rounded-[8px] w-[160px] h-[48px] justify-center items-center flex text-black font-poppins text-[14px] not-italic font-normal leading-[24px] hover:text-white duration-300 bg-white hover:bg-[#B00000] hover:border-transparent hover:shadow-[0px_0px_64px_0px_rgba(176,0,0,0.30)]">
+                          <button className="border border-solid border-black rounded-[8px] w-[160px] h-[48px] justify-center items-center flex font-poppins text-[14px] not-italic font-normal leading-[24px] text-white duration-300 bg-[#B00000] border-transparent shadow-[0px_0px_64px_0px_rgba(176,0,0,0.30)] hover:shadow-none hover:bg-[rgba(176,0,0,0.8)]">
                             Create an Account
                           </button>
                           <button className="border border-solid border-black rounded-[8px] w-[160px] h-[48px] justify-center items-center flex text-black font-poppins text-[14px] not-italic font-normal leading-[24px] hover:text-white duration-300 bg-white hover:bg-[#B00000] hover:border-transparent hover:shadow-[0px_0px_64px_0px_rgba(176,0,0,0.30)]">
@@ -272,7 +268,7 @@ function Header() {
             </div>
             <div
               className="w-full lg:w-1/2 flex justify-center lg:justify-end items-end"
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-once="true"
               data-aos-delay="2000"
               data-aos-duration="1000"
