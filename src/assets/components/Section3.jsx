@@ -16,7 +16,7 @@ function Section3() {
     <>
       <div
         id="section3"
-        className="max-w-[1256px] w-full mx-auto pl-3 min-[1200px]:pl-[50px] pr-3 mb-12 lg:mb-[106px] overflow-hidden"
+        className="max-w-[1256px] w-full mx-auto pl-3 min-[1200px]:pl-[50px] pr-3 mb-12 lg:mb-[85px] overflow-hidden"
       >
         <div className="w-full flex flex-wrap">
           <div
