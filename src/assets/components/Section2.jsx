@@ -145,13 +145,11 @@ function Section2() {
             </span>
             <span
               onClick={() => setYear(!year)}
-              className={`flex cursor-pointer items-center px-[9px] sm:ml-[31px] sm:mr-[26px] w-[60px] sm:w-[93px] h-[25px] sm:h-[50px] rounded-[73px] bg-[#B00000] ${
-                year == false ? "justify-start" : "justify-end"
-              }`}
+              className={`flex cursor-pointer items-center px-[9px] sm:ml-[31px] sm:mr-[26px] w-[60px] sm:w-[93px] h-[25px] sm:h-[50px] rounded-[73px] bg-[#B00000] relative`}
             >
               <span
-                className={`block w-[15px] sm:w-[30px] h-[15px] sm:h-[30px] rounded-[50%] ${
-                  year == false ? "bg-white" : "bg-black"
+                className={`block w-[15px] sm:w-[30px] h-[15px] sm:h-[30px] duration-500 rounded-[50%] absolute ${
+                  year == false ? "bg-white left-[9%]" : "bg-black left-[65%] sm:left-[58%]"
                 }`}
               ></span>
             </span>
